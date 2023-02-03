@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .divpractice {
+            width: 100%;
+            height: 500px;
+
+            background-color: green;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .divpractice >.first {
+            width: 500px;
+            height: 200px;
+
+            background-color: cornflowerblue;
+        }
+        .divpractice > .second {
+            width: 40%;
+            height: 300px;
+
+            background-color: aquamarine;
+            
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divpractice > .second > button:last-child {
+            margin-right: 10px;
+            padding: 10px;
+
+            background-color: blue;
+        }
+    </style>
+    <script>
+        function hay() {
+            alert('hi ganteng semangat xixixi');
+        }
+    </script>
+</head>
+<body>
+    <h1>Learningx</h1>
+    <h2>Learningx</h2>
+    <input type="text" id="text-box">
+    <div class="divpractice">
+        <div class="first" id="first-box">fadil 1</div>
+        <div class="second" id="second-box">
+            <button onclick="hay()" id="button-1">Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+        </div>
+    </div>
+</body>
+</html>
